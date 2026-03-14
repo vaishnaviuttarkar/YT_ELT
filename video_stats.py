@@ -126,6 +126,7 @@ def save_to_json(extracted_data):
 
     with open(file_path, "w", encoding="utf-8") as json_outfile:
         json.dump(extracted_data, json_outfile, indent=4, ensure_ascii=False)
+        
 if __name__ == "__main__":
     playlistID = get_playlist_id()
     video_ids = get_video_id(playlistID)
